@@ -4,6 +4,8 @@
 #include "controller.h"
 #include <vector>
 
+// The interface for the grid of the minesweeper
+
 class Cell;
 class Controller::Board {
     int height, width, minesLeft;

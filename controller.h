@@ -5,6 +5,8 @@
 #include <string>
 #include <utility>
 
+// The interface for the I/O controller of the game
+
 class Controller {
     class Board;
     Board *b;

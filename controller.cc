@@ -20,8 +20,10 @@ Controller::Controller(string diff) {
     display();
 } 
 
+// Destructor
 Controller::~Controller() { delete b; }
 
+// Display the Grid
 bool Controller::display() {
     bool isWin = true;
     cout << "\nMines Left: " << b->minesLeft << "\n   ";

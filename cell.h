@@ -1,6 +1,8 @@
 #ifndef CELL_H
 #define CELL_H
 
+// The interface for a cell of a minesweeper grid
+
 class Cell {
     int bombsNear;
     bool isBomb, isOpen, isMarked;

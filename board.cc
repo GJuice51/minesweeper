@@ -35,7 +35,6 @@ Controller::Board::Board(int h, int w): height{h}, width{w} {
                     mines.emplace_back(cells[i][j]);
                     --leftToAdd;
                 }           
-                //cells[i][j]->open();      // delete later
             }
         }
     }

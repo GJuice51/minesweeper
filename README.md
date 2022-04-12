@@ -5,11 +5,11 @@ To play, clone this repository and type
 
 > `make`. 
 
-Type down 
+to build the executable for the game. Type
 
 > `./minesweeper` 
 
-to start playing the game in easy mode. You can attach the `-medium` and `-hard` flags to play harder modes as well.
+to start playing in easy mode. You can attach the `-medium` and `-hard` flags to play harder modes as well.
 
 To uncover a cell, simply type its coordinates shown along the sides such as
 
