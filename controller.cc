@@ -73,7 +73,7 @@ void Controller::readInput() {
             if (b->minesLeft == 0) {
                 cout << "No more mines to mark!" << endl;
                 continue;
-            }
+            } 
             markCell  = true;
             cin >> cmd;         
         }       
@@ -91,14 +91,18 @@ void Controller::readInput() {
         Cell *c = b->cells[cell.first][cell.second];
         if (markCell) { 
             // Mark a cell with an X
+            if (c->isAnOpen()) {
+                cout << "Cannot mark an open cell." << endl;
+                continue;
+            }
             b->minesLeft += (c->isAMark())? 1 : -1;
             c->mark();
         } else {
             // Open a cell
             c->open();
             if(c->isAMark()) {
-                ++b->minesLeft;
-                c->mark();
+                cout << "Cannot open a marked cell." << endl;
+                continue;
             }
 
             // Lose if a mine is opened
