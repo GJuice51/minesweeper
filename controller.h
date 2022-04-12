@@ -1,19 +1,19 @@
 #ifndef CONTROLLER_H
 #define CONTROLLER_H
 
+#include <iostream>
 #include <string>
-#include <memory>
 
-class Board;
 class Controller {
-    unique_ptr<Board> board;
-    int bombs;
+    class Board;
+    Board *b;
+    
+    void display();
 
     public:
     Controller(std::string diff);
     ~Controller();
     void readInput();
-
 
 };
 
