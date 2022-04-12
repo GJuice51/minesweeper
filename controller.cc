@@ -19,5 +19,5 @@ Controller::Controller(string diff) {
 } 
 
 void Controller::readInput() {
-    cout << "hi" << endl;
+    cout << "hi!" << endl;
 }
